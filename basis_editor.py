@@ -99,7 +99,7 @@ print("2 : Add a set with preset levels based on a provided tsv file")
 print("3 : Clear all sets in the file")
 response = -1
 while response not in ["1","2","3"]:
-    response = input("Select your option : ")
+    response = str(input("Select your option : "))
 
 if response == "1":
     print("Select a preset")
@@ -109,7 +109,7 @@ if response == "1":
     print("4 : User Defined")
     response1 = -1
     while response1 not in ["1","2","3","4"]:
-        response1 = input("Select your option : ")   
+        response1 = str(input("Select your option : "))
 elif response == "2":
     print("Give file name of your custom tsv")
     print("It should be in the same folder as this code and have IDs in first column, and levels in 5th")
